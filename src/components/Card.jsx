@@ -1,4 +1,5 @@
 import styles from "../components/card.module.css";
+import PropTypes from 'prop-types';
 import Image from "next/image";
 
 const Card = () => {
@@ -9,5 +10,9 @@ const Card = () => {
       </article> 
     )
 }
+
+Card.propTypes = {
+  elements: PropTypes.objectOf(PropTypes.objectOf).isRequired,
+};
 
 export default Card;

@@ -1,0 +1,14 @@
+.training_card__container{
+    max-width: 400px;
+    padding: 12px;
+}
+
+.training_card__image{
+    width: 99%;
+    margin: 0 auto;
+}
+
+.training_card__title{
+    color: var(--color-tex);
+    margin: 5px;
+}
