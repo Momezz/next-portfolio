@@ -38,7 +38,7 @@
   }
   
   .navigation__navlink:hover{
-    color: var(--color-text-hover);
+    color: var(--main-color);
   }
   
   .navigation__logo{

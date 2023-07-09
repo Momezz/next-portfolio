@@ -45,7 +45,7 @@
 }
 
 .presentation__a:hover{
-    color: var(--color-text-hover);
+    color: var(--main-color);
 }
 
 @media(min-width: 768px){
