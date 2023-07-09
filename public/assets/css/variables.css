@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Philosopher:wght@400;700&display=swap');
 
 :root {
-    --color-text-hover: #fa4529;
+    --main-color: #fa4529;
     --color-tex: #180404;
 
     --text-title-presentation: 'Philosopher', sans-serif;

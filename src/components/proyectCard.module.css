@@ -1,0 +1,35 @@
+.proyect_card__container{
+    padding: 30px;
+}
+
+.proyect_card__img{
+    width: 100%;
+}
+
+.proyect_card__title{
+    margin-top: 22px;
+    font-size: 20px;
+}
+
+.proyect_card__paragraph{
+    margin-top: 15px;
+}
+
+.proyect_card__cont_btns{
+    margin-top: 10px;
+}
+
+.proyect_card__btn{
+    margin-right: 15px;
+    border: none;
+    width: 120px;
+    height: 40px;
+}
+
+.proyect_card__cont_right{
+    background-color: var(--main-color);
+}
+
+.proyect_card__btn_left{
+    border: 1px solid var(--main-color);
+}
