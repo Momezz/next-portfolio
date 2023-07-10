@@ -4,6 +4,7 @@
 :root {
     --main-color: #fa4529;
     --color-tex: #180404;
+    --color-tex-input: #282828;
 
     --text-title-presentation: 'Philosopher', sans-serif;
     --text-presentation: 'Kalam', cursive;

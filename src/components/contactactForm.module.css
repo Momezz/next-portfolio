@@ -1,0 +1,32 @@
+.contact_form__container{
+    padding: 10px;
+    width: 400px;
+}
+
+.contact_form__form{
+    flex-direction: column;
+    display: flex;
+}
+
+.contact_form__input{
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    resize: none; 
+    margin: 5px;
+    width: 95%;
+}
+
+.contact_form__input:focus{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--color-tex-input);
+}
+
+.contact_form__btn{
+    background-color: var(--main-color);
+    width: 220px;
+    height: 45px;
+    border: none;
+}
