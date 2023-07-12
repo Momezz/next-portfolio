@@ -1,0 +1,13 @@
+.footer__container{
+    background-color: var(--light-main-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    width: 100%;
+}
+
+.footer__paragraph{
+    text-align: center;
+    font-size: 18px;
+}
