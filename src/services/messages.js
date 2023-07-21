@@ -3,24 +3,24 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
-export const createUser = createAsyncThunk(
-  'message/createUser',
-  async (user) => {
+export const createMessage = createAsyncThunk(
+  'message/createMessage',
+  async (message) => {
     const options = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(user),
+      body: JSON.stringify(message),
     };
 
-    const res = await fetch(`${BASE_URL}/api/message`, options);
+    const res = await fetch(`${BASE_URL}/api/messages`, options);
     const result = await res.json();
     return result;
   },
 );
-export const getUserById = createAsyncThunk(
-  'message/getUser',
+export const getMessageById = createAsyncThunk(
+  'message/getMessage',
   async (data) => {
     const options = {
       method: 'GET',
@@ -29,25 +29,7 @@ export const getUserById = createAsyncThunk(
       },
     };
 
-    const res = await fetch(`${BASE_URL}/api/message/${data}`, options);
-    const result = await res.json();
-    return result;
-  },
-);
-
-export const updateUser = createAsyncThunk(
-  'message/updateUser',
-  async (data) => {
-    const { formdata, _id } = data;
-    const options = {
-      method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formdata),
-    };
-
-    const res = await fetch(`${BASE_URL}/api/message/${_id}`, options);
+    const res = await fetch(`${BASE_URL}/api/messages/${data}`, options);
     const result = await res.json();
     return result;
   },

@@ -33,30 +33,6 @@ export const createMessage = createAsyncThunk('messages/createMessage', async (m
   return data;
 });
 
-export const deleteMessage = createAsyncThunk('messages/deleteMessage', async (id) => {
-  const options = {
-    method: 'DELETE',
-  };
-
-  const response = await fetch(`${BASE_URL}/api/messages/${id}`, options);
-  const data = await response.json();
-  return data;
-});
-
-export const updateMessage = createAsyncThunk('messages/updateMessage', async (message, id) => {
-  const options = {
-    method: 'PATCH',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(message),
-  };
-
-  const response = await fetch(`${BASE_URL}/api/messages/${id}`, options);
-  const data = await response.json();
-  return data;
-});
-
 const messagesSlice = createSlice({
   name: 'messages',
   initialState,
@@ -73,12 +49,6 @@ const messagesSlice = createSlice({
       state.messages = action.payload;
     });
     builder.addCase(createMessage.fulfilled, (state, action) => {
-      state.messages = action.payload;
-    });
-    builder.addCase(deleteMessage.fulfilled, (state, action) => {
-      state.messages = action.payload;
-    });
-    builder.addCase(updateMessage, (state, action) => {
       state.messages = action.payload;
     });
   },
