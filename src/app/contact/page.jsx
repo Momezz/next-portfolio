@@ -1,8 +1,9 @@
 import ContactForm from '../../components/ContactForm';
+import styles from './cotact.module.css';
 
 const Contact = () => {
     return (
-        <section>
+        <section className={styles.contac__container}>
             <ContactForm />
         </section>
     )

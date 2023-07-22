@@ -28,7 +28,7 @@ export const createMessage = createAsyncThunk('messages/createMessage', async (m
     body: JSON.stringify(message),
   };
 
-  const response = await fetch(`${BASE_URL}/api/messages`, options);
+  const response = await fetch(`http://localhost:8080/api/messages`, options);
   const data = await response.json();
   return data;
 });
