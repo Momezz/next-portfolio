@@ -1,0 +1,29 @@
+.skills_layout__container{
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.skills_layout__list{
+  grid-template-columns: auto auto;
+  display: grid;
+}
+
+.skills_layout__link{
+  margin: 7px;
+}
+
+@media(min-width:768px){
+  .skills_layout__list{
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media(min-width:1199px){
+  .skills_layout__list{
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
