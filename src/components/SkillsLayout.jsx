@@ -3,7 +3,7 @@ import Card from '../components/Card';
 
 const SkillsLayout = async () => {
   const fetchPost = () => {
-    return fetch('http://localhost:8080/api/skills')
+    return fetch('http://localhost:8080/api/skills', { cache: 'no-store' })
       .then(res => res.json())
   }
   const posts = await fetchPost();

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Presentation from '../components/Presentation';
 import AboutMe from '../components/AboutMe';
 import SkillsLayout from '../components/SkillsLayout';
+import Studies from '../components/Studies';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Presentation />
         <AboutMe />
         <SkillsLayout />
+        <Studies />
       </section>
     </main>
   )

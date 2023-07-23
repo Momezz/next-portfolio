@@ -3,13 +3,19 @@
   flex-direction: column;
   margin-bottom: 25px;
   align-items: center;
-  display: flex;
+  margin-top: 50px;
   width: 100%;
 }
 
+.skills_layout__title{
+  margin-bottom: 30px;
+  text-align: center;
+}
 .skills_layout__list{
   grid-template-columns: auto auto;
+  justify-content: space-around;
   display: grid;
+  width: 100%;
 }
 
 .skills_layout__link{
@@ -22,7 +28,7 @@
   }
 }
 
-@media(min-width:1199px){
+@media(min-width:1440px){
   .skills_layout__list{
     grid-template-columns: auto auto auto auto auto;
   }

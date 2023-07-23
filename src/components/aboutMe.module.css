@@ -1,25 +1,19 @@
-.about_me__container{
-    padding: 40px;
+.about_me__container {
+  margin-top: 50px;
 }
 
-.about_me__paragraph{
-    font-family: var(--text-presentation);
-    font-size: 24px;
+.about_me__paragraph {
+  font-family: var(--text-presentation);
+  font-size: 24px;
 }
 
-.about_me__title{
-    font-family: var(--text-title-presentation);
-    font-size: 35px;
+.about_me__title {
+  font-family: var(--text-title-presentation);
+  font-size: 35px;
 }
 
-@media(min-width: 768px){
-    .about_me__title{
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .about_me__container{
-        padding: 70px;
-    }
+@media(min-width: 768px) {
+  .about_me__title {
+    font-size: 40px;
+  }
 }
