@@ -1,35 +1,53 @@
-.proyect_card__container{
-    padding: 30px;
+.proyect_card__container {
+  flex-direction: column;
+  display: flex;
+  padding: 30px;
+  margin: 15px;
+  width: 90%;
 }
 
-.proyect_card__img{
-    width: 100%;
+.proyect_card__cont_img {
+  width: 100%;
 }
 
-.proyect_card__title{
-    margin-top: 22px;
-    font-size: 20px;
+.proyect_card__img {
+  width: 95%;
 }
 
-.proyect_card__paragraph{
-    margin-top: 15px;
+.proyect_card__text {
+  margin-top: 7px;
+}
+.proyect_card__title {
+  font-size: 20px;
 }
 
-.proyect_card__cont_btns{
-    margin-top: 10px;
+.proyect_card__paragraph {
+  margin-top: 5px;
 }
 
-.proyect_card__btn{
-    margin-right: 15px;
-    border: none;
-    width: 120px;
-    height: 40px;
+.proyect_card__cont_btns {
+  margin-top: 15px;
+  display: flex;
 }
 
-.proyect_card__cont_right{
-    background-color: var(--main-color);
+.proyect_card__btn {
+  margin-right: 15px;
+  text-align: center;
+  width: 120px;
+  height: 30px;
 }
 
-.proyect_card__btn_left{
-    border: 1px solid var(--main-color);
+.proyect_card__cont_right {
+  background-color: var(--main-color);
+}
+
+.proyect_card__btn_left {
+  border: 1px solid var(--main-color);
+}
+
+.proyect_card__a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
 }

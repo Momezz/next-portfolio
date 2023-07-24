@@ -1,7 +1,11 @@
+import ProyectLayout from '../../components/ProyectsLayout';
+
 const Portfolio = () => {
-    return (
-        <h1>PORTFOLIO</h1>
-    )
+  return (
+    <main>
+      <ProyectLayout />
+    </main>
+  )
 }
 
 export default Portfolio;
