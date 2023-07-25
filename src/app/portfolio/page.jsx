@@ -1,8 +1,9 @@
+import styles from './portfolio.module.css';
 import ProyectLayout from '../../components/ProyectsLayout';
 
 const Portfolio = () => {
   return (
-    <main>
+    <main className={styles.portfolio__container}>
       <ProyectLayout />
     </main>
   )
