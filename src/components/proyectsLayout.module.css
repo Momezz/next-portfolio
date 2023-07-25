@@ -1,3 +1,21 @@
 .proyects_layout__container{
-  width: 500px;
+  width: 100%;
+}
+
+.proyects_layout__title{
+  margin-bottom: 45px;
+  text-align: center;
+  font-size: 32px;
+}
+.proyects_layout__list {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.proyects_layout__link{
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  width: 100%;
 }

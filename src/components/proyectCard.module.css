@@ -1,9 +1,10 @@
 .proyect_card__container {
+  border: 1px solid black;
   flex-direction: column;
+  font-size: 18px;
   display: flex;
-  padding: 30px;
   margin: 15px;
-  width: 90%;
+  width: 100%;
 }
 
 .proyect_card__cont_img {
@@ -11,14 +12,18 @@
 }
 
 .proyect_card__img {
-  width: 95%;
+  height: 100%;
+  width: 100%;
 }
 
 .proyect_card__text {
-  margin-top: 7px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
+
 .proyect_card__title {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .proyect_card__paragraph {
@@ -31,8 +36,11 @@
 }
 
 .proyect_card__btn {
+  justify-content: center;
+  align-items: center;
   margin-right: 15px;
   text-align: center;
+  display: flex;
   width: 120px;
   height: 30px;
 }
@@ -50,4 +58,37 @@
   font-weight: 600;
   font-size: 18px;
   color: black;
+}
+
+@media(min-width: 768px) {
+  .proyect_card__container {
+    font-size: 21px;
+  }
+
+  .proyect_card__text {
+    margin-left: 60px;
+  }
+}
+
+@media(min-width: 1044px) {
+  .proyect_card__container {
+    flex-direction: row;
+    max-width: 1000px;
+    font-size: 25px;
+    height: 350px;
+  }
+
+  .proyect_card__invested {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+
+  .proyect_card__cont_img {
+    width: 60%;
+  }
+  
+  .proyect_card__img {
+    width: 100%;
+    height: 100%;
+  }
 }
