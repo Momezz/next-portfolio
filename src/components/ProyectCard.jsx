@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "../components/proyectCard.module.css";
 import PropTypes from "prop-types";
 import Image from "next/image";
@@ -54,6 +56,23 @@ const ProyectCard = ({ element, index }) => {
             </a>
           </div>
         </div>
+        <h5 className={styles.proyect_card__title_table}>Pincipales tecnologías que utilicé</h5>
+        <ul className={styles.proyect_card__logos_list}>
+          {
+            element.technologies.map((logo, index) => (
+              <li key={index}>
+                <Image
+                  className={styles.proyect_card__logo}
+                  src={logo}
+                  alt="image"
+                  width={110}
+                  height={120}
+                  priority
+                />
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </article>
   );
