@@ -25,8 +25,8 @@ const Navigation = () => {
       <header
         className={
           toogleMenu
-            ? styles.navigation__container_none  + " " + styles.navigation__container_desktop
-            : styles.navigation__container  + " " + styles.navigation__container_desktop
+            ? styles.navigation__container_none + " " + styles.navigation__container_desktop
+            : styles.navigation__container + " " + styles.navigation__container_desktop
         }
       >
         <div className={styles.navigation__cont_logo}>

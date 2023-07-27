@@ -1,3 +1,14 @@
+.navigation__container {
+  background-color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.navigation__container.active {
+  left: 0;
+}
+
 .navigation__container_none {
   display: none;
 }
