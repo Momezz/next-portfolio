@@ -4,11 +4,13 @@
 
 .about_me__paragraph {
   font-family: var(--text-presentation);
+  color: var(--font-color-text);
   font-size: 24px;
 }
 
 .about_me__title {
   font-family: var(--text-title-presentation);
+  color: var(--font-color-title);
   font-size: 35px;
 }
 

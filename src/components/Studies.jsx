@@ -10,7 +10,7 @@ const Studies = async () => {
 
   return (
     <section className={styles.studies__container}>
-      <h1 className={styles.studies__title}>FORMACION ACADEMICA</h1>
+      <h2 className={styles.studies__title}>FORMACION ACADEMICA</h2>
       <ul className={styles.studies__list}>
         {
           posts.map((value) => (
