@@ -1,20 +1,23 @@
 .studies__container{
+  font-family: var(--text-general);
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
 }
 
 .studies__list{
   justify-content: space-around;
   display: grid;
-
 }
 
 .studies__title{
+  color: var(--font-color-title);
   margin-bottom: 30px;
   text-align: center;
-
+  font-weight: 700;
+  font-size: 25px;
 }
+
 .studies__link{
   border: 1px solid black;
   list-style: none;

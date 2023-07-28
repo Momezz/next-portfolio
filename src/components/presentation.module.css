@@ -14,12 +14,50 @@
   width: 140px;
 }
 
+.presentation__links {
+  margin-top: 15px;
+  display: flex;
+}
+
+.presentation__logos {
+  font-family: var(--text-linkedin-logo);
+  transition: transform 0.5s ease; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  height: 35px;
+}
+
+.presentation__logos:hover {
+  transform: scale(1.1); 
+}
+
+.presentation__logo_linkedin {
+  background-color: var(--color-main-linkedin);
+  color: #FFFFFF;
+  width: 35px;
+}
+
+.presentation__logo_github {
+  background-color: var(--github-background-color);
+  color: var(--color-main-github);
+  width: 100px;
+}
+
 .presentation__title {
   font-family: var(--text-title-presentation);
+  color: var(--font-color-title);
   margin-bottom: 30px;
   line-height: 40px;
   font-weight: 700;
   font-size: 35px;
+}
+
+.presentation__text {
+  color: var(--font-color-text);
 }
 
 .presentation__text_cont {
@@ -27,26 +65,15 @@
   font-size: 18px;
 }
 
-.presentation__links {
-  background-color: rgb(250, 215, 161);
-  margin-top: 15px;
-}
-
 .presentation__a {
   text-decoration: none;
   margin-right: 20px;
-  font-size: 18px;
-  color: gray;
-  padding: 4px;
-}
-
-.presentation__a:hover {
-  color: var(--main-color);
 }
 
 @media(min-width: 768px) {
   .presentation__container {
     grid-template-areas: "item2 item1";
+    margin-top: 90px;
     display: grid;
   }
 

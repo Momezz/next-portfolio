@@ -1,4 +1,8 @@
 .training_card__container {
+  box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  -webkit-box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  -moz-box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  border: 1px solid var(--font-color-text);
   min-width: 330px;
   padding: 12px;
 }
@@ -9,11 +13,12 @@
 }
 
 .training_card__title {
-  color: var(--color-tex);
+  color: var(--font-color-title);
   margin-bottom: -7px;
 
 }
 
 .training_card__paragraph {
+  color: var(--font-color-text);
   margin-top: 0;
 }

@@ -1,5 +1,4 @@
 import styles from './page.module.css';
-import Image from 'next/image';
 import Presentation from '../components/Presentation';
 import AboutMe from '../components/AboutMe';
 import SkillsLayout from '../components/SkillsLayout';
