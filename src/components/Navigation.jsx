@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import styles from "../components/navigation.module.css";
-import { useState } from "react";
+import Link from 'next/link';
+import styles from '../components/navigation.module.css';
+import { useState } from 'react';
 
 const Navigation = () => {
   const [toogleMenu, setToggleMenu] = useState(false);
@@ -29,10 +29,15 @@ const Navigation = () => {
             : styles.navigation__container + " " + styles.navigation__container_desktop
         }
       >
-        <div className={styles.navigation__cont_logo}>
-          <span className={styles.navigation__logo}>J</span>
-          <h3 className={styles.navigation__title}>Julian Gomez Mejia</h3>
-        </div>
+        <Link
+        className={styles.navigation__navlink_logo}
+          href="/"
+        >
+          <div className={styles.navigation__cont_logo}>
+            <span className={styles.navigation__logo}>J</span>
+            <h3 className={styles.navigation__title}>Julian Gomez Mejia</h3>
+          </div>
+        </Link>
         <nav className={styles.navigation__nav}>
           <ul className={styles.navigation__ul_nav}>
             <li className={styles.navigation__li_nav}>
