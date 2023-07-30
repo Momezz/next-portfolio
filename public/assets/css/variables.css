@@ -5,6 +5,8 @@
 
 :root {
   --main-background-color: #122045;
+  --main-background-gradient: #113045;
+  --button-menu-color: #80808042;
   --font-color-title: #c4d1ec;
   --font-color-text: #c4d1ec;
   --main-color: #fa4529;

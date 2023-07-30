@@ -1,6 +1,8 @@
 .navigation__container {
-  background-color: white;
+  background: var(--main-background-color);
+  background: radial-gradient(circle, var(--main-background-color) 34%, var(--main-background-gradient) 95%);
   position: absolute;
+  padding: 10px;
   height: 100%;
   width: 100%;
 }
@@ -26,8 +28,11 @@
 }
 
 .navigation__button {
+  background-color: var(--button-menu-color);
+  color: var(--font-color-title);
+  font-weight: 900;
   font-size: 25px;
-  color: black;
+  border: none;
   height: 50px;
   width: 50px;
 }
