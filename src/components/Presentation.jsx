@@ -1,4 +1,5 @@
 import styles from '../components/presentation.module.css';
+import profile from '../../public/assets/images/profile.JPG';
 import Image from 'next/image';
 
 const Presentation = () => {
@@ -7,7 +8,7 @@ const Presentation = () => {
       <div className={styles.presentation__image_cont}>
         <Image
           className={styles.presentation__image}
-          src="https://tse4.explicit.bing.net/th?id=OIP.lxGrRREqByKPrMOc5TiNKwHaGK&pid=Api&P=0&h=180"
+          src={profile}
           alt="image"
           width={110}
           height={120}
