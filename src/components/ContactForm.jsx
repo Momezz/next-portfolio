@@ -1,10 +1,10 @@
 "use client";
 
-import styles from "../components/contactactForm.module.css";
-import { useDispatch } from "react-redux";
-import { createMessage } from "../redux/features/message/messageSlice";
-import * as Yup from "yup";
-import { useFormik } from "formik";
+import styles from '../components/contactactForm.module.css';
+import { useDispatch } from 'react-redux';
+import { createMessage } from '../redux/features/message/messageSlice';
+import * as Yup from 'yup';
+import { useFormik } from 'formik';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -42,8 +42,8 @@ const ContactForm = () => {
 
   return (
     <article className={styles.contact_form__container}>
-      <h2>Contactame</h2>
-      <p>
+      <h2 className={styles.contact_form__title}> Contactame</h2>
+      <p className={styles.contact_form__paragraph}>
         ¿Quieres contactarme?
         <br />
         Completa el siguiente formulario y me pondré en contacto con tigo lo
