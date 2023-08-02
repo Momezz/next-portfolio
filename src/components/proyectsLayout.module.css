@@ -3,6 +3,7 @@
 }
 
 .proyects_layout__title{
+  color: var(--font-color-title);
   margin-bottom: 45px;
   text-align: center;
   font-size: 32px;

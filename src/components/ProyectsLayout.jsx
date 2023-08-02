@@ -1,5 +1,5 @@
-import styles from "./proyectsLayout.module.css";
-import ProyectCard from "./ProyectCard";
+import styles from './proyectsLayout.module.css';
+import ProyectCard from './ProyectCard';
 
 const ProyectsLayout = async () => {
   const fetchProyects = () => {
