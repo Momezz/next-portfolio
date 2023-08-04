@@ -12,12 +12,14 @@ const ProyectCard = ({ element, index }) => {
           : styles.proyect_card__invested + " " + styles.proyect_card__container
       }
     >
-      <Link
-        className={styles.proyect_card__link}
-        href={`/portfolio/${element._id}`}
-      >
-        ||| Ver más detalles |||
-      </Link>
+      <div className={styles.proyect_card__see}>
+        <Link
+          className={styles.proyect_card__link}
+          href={`/portfolio/${element._id}`}
+        >
+          Ver más detalles
+        </Link>
+      </div>
       <div className={styles.proyect_card__cont_img}>
         <Image
           className={styles.proyect_card__img}
