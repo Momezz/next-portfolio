@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: column;
   border-radius: 15px;
+  position: relative;
   align-items: center;
   text-align: center;
   font-size: 18px;
@@ -12,7 +13,17 @@
   width: 100%;
 }
 
-.proyect_card__container:hover {
+.proyect_card__link {
+  border-bottom: 2px solid var(--font-color-title);
+  border-top: 2px solid var(--font-color-title);
+  color: var(--font-color-title);
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.proyect_card__link:hover {
   box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
   -webkit-box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
   -moz-box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);

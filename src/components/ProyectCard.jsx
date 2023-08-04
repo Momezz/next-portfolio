@@ -1,8 +1,7 @@
-"use client"
-
 import styles from '../components/proyectCard.module.css';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ProyectCard = ({ element, index }) => {
   return (
@@ -13,6 +12,12 @@ const ProyectCard = ({ element, index }) => {
           : styles.proyect_card__invested + " " + styles.proyect_card__container
       }
     >
+      <Link
+        className={styles.proyect_card__link}
+        href={`/portfolio/${element._id}`}
+      >
+        ||| Ver más detalles |||
+      </Link>
       <div className={styles.proyect_card__cont_img}>
         <Image
           className={styles.proyect_card__img}
@@ -25,27 +30,25 @@ const ProyectCard = ({ element, index }) => {
       </div>
       <div>
         <h2 className={styles.proyect_card__title}>{element.title}</h2>
-        <h5 className={styles.proyect_card__title_table}>Pincipales tecnologías que utilicé</h5>
+        <h5 className={styles.proyect_card__title_table}>
+          Pincipales tecnologías que utilicé
+        </h5>
         <ul className={styles.proyect_card__logos_list}>
-          {
-            element.technologies.map((logo, index) => (
-              <li key={index}>
-                <Image
-                  className={styles.proyect_card__logo}
-                  src={logo}
-                  alt="image"
-                  width={110}
-                  height={120}
-                  priority
-                />
-              </li>
-            ))
-          }
+          {element.technologies.map((logo, index) => (
+            <li key={index}>
+              <Image
+                className={styles.proyect_card__logo}
+                src={logo}
+                alt="image"
+                width={110}
+                height={120}
+                priority
+              />
+            </li>
+          ))}
         </ul>
         <div className={styles.proyect_card__cont_btns}>
-          <div
-            className={styles.proyect_card__btn}
-          >
+          <div className={styles.proyect_card__btn}>
             <a
               className={styles.proyect_card__a}
               href={element.repositoryLink}
@@ -54,9 +57,7 @@ const ProyectCard = ({ element, index }) => {
               Repositorio
             </a>
           </div>
-          <div
-            className={styles.proyect_card__btn}
-          >
+          <div className={styles.proyect_card__btn}>
             <a
               className={styles.proyect_card__a}
               href={element.pageLink}
