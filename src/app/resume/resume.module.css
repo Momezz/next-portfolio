@@ -1,0 +1,125 @@
+.resume__container {
+  background-color: var(--main-background-color);
+  font-family: var(--text-general);
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.resume__pdf_cont {
+  width: 100%;
+}
+
+.resume__pdf_btn {
+  background-color: var(--button-menu-color);
+  color: var(--font-color-title);
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 18px;
+  display: flex;
+  height: 40PX;
+  float: right;
+  width: 130px;
+}
+
+.resume__image_cont {
+  color: var(--font-color-text);
+  margin-left: 20px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.resume__image {
+  border-radius: 50%;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+}
+
+.resume__contact_title {
+  color: var(--font-color-title);
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+.resume__link {
+  color: var(--font-color-text);
+}
+
+.resume__link_proyect {
+  color: var(--main-background-transparent);
+  margin-right: 20px;
+}
+
+.resume__contac_list {
+  width: 100%;
+}
+
+.resume__contac_item {
+  margin-top: 8px;
+}
+
+.resume__skills {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.resume__progress_skill {
+  margin-top: 10px;
+  float: right;
+  height: 8px;
+}
+
+.resume__text_cont {
+  background-color: var(--main-background-cv);
+  color: var(--text-cv);
+  padding: 20px;
+  width: 100%;
+}
+
+.resume__title {
+  color: var(--text-title-cv);
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.resume__subtitle {
+  text-align: center;
+  font-weight: 200;
+  font-size: 25px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.resume__subtitle_blue {
+  background-color: var(--main-background-color);
+  color: var(--font-color-title);
+  padding: 0px 5px 0px 5px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+@media(min-width: 768px) {
+  .resume__container {
+    flex-direction: row;
+  }
+
+  .resume__image_cont {
+    flex-direction: column;
+    margin-top: 20px;
+    min-width: 378px;
+    display: flex;
+  }
+
+  .resume__text_cont {
+    padding: 40px;
+  }
+}
