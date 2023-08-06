@@ -10,11 +10,14 @@
   --github-background-nav: #0A2647;
   --main-background-color: #122045;
   --button-menu-color: #80808042;
+  --main-background-cv: #EEEFEF;
   --color-main-linkedin: #0A66C2;
   --color-main-github: #1F2328;
   --font-color-title: #c4d1ec;
   --font-color-text: #c4d1ec;
+  --text-title-cv: #000000;
   --text-error: #e86f5c;
+  --text-cv: #0D0D0D;
 
   --text-title-presentation: "Philosopher", sans-serif;
   --text-linkedin-logo: "Lato", sans-serif;
