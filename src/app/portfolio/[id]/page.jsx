@@ -1,6 +1,7 @@
 import styles from './id.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import Carousel from '../../../components/Carousel';
 
 const SingleProyect = async ({ params }) => {
   const { id } = params;
@@ -14,17 +15,17 @@ const SingleProyect = async ({ params }) => {
   return (
     <section className={styles.single_proyect__container}>
       <div className={styles.single_proyect__link_cont}>
-      <Link
-        className={styles.single_proyect__link}
-        href={'/portfolio/'}
-      >
-        &lt;&lt;
-      </Link>
+        <Link
+          className={styles.single_proyect__link}
+          href={'/portfolio/'}
+        >
+          &lt;&lt;
+        </Link>
       </div>
       <h2 className={styles.single_proyect__title}>{proyect.title}</h2>
       <div className={styles.single_proyect__sub_container}>
         <div className={styles.single_proyect__carousel}>
-          carrusel de imagenes
+          <Carousel images={proyect.images} />
         </div>
         <div>
           <ul className={styles.single_proyect__logos_list}>
