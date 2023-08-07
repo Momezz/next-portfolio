@@ -21,7 +21,7 @@
 
 .presentation__logos {
   font-family: var(--text-linkedin-logo);
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
   justify-content: center;
   align-items: center;
   border-radius: 3px;
@@ -32,7 +32,7 @@
 }
 
 .presentation__logos:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .presentation__logo_linkedin {
