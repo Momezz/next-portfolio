@@ -1,9 +1,10 @@
 import styles from './studies.module.css';
 import TrainingCard from './TrainingCard';
 
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const Studies = async () => {
   const fetchPost = () => {
-    return fetch('http://localhost:8080/api/studies', { cache: 'no-store' })
+    return fetch(`${BASE_URL}api/studies`, { cache: 'no-store' })
       .then(res => res.json())
   }
   const posts = await fetchPost();

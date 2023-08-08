@@ -1,9 +1,10 @@
 import styles from './proyectsLayout.module.css';
 import ProyectCard from './ProyectCard';
 
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const ProyectsLayout = async () => {
   const fetchProyects = () => {
-    return fetch("http://localhost:8080/api/proyects", {
+    return fetch(`${BASE_URL}api/proyects`, {
       cache: "no-store",
     }).then((res) => res.json());
   };
