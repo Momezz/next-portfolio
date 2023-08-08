@@ -3,10 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Carousel from '../../../components/Carousel';
 
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const SingleProyect = async ({ params }) => {
   const { id } = params;
   const fetchProyect = () => {
-    return fetch(`http://localhost:8080/api/proyects/${id}`).then((res) =>
+    return fetch(`${BASE_URL}api/proyects/${id}`).then((res) =>
       res.json()
     );
   };

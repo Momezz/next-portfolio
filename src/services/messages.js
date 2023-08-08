@@ -14,7 +14,7 @@ export const createMessage = createAsyncThunk(
       body: JSON.stringify(message),
     };
 
-    const res = await fetch(`${BASE_URL}/api/messages`, options);
+    const res = await fetch(`${BASE_URL}api/messages`, options);
     const result = await res.json();
     return result;
   },
@@ -29,7 +29,7 @@ export const getMessageById = createAsyncThunk(
       },
     };
 
-    const res = await fetch(`${BASE_URL}/api/messages/${data}`, options);
+    const res = await fetch(`${BASE_URL}api/messages/${data}`, options);
     const result = await res.json();
     return result;
   },
