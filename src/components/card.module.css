@@ -1,0 +1,26 @@
+.card__container {
+  box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  -webkit-box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  -moz-box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  border: 2px solid var(--font-color-text);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  display: flex;
+  padding: 10px;
+  height: 120px;
+  width: 120px;
+}
+
+.card__title {
+  color: var(--font-color-title);
+  font-size: 12px;
+}
+
+.card__image {
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+}
