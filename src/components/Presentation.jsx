@@ -1,5 +1,4 @@
 import styles from '../components/presentation.module.css';
-import profile from '../../public/assets/images/profile.JPG';
 import Image from 'next/image';
 
 const Presentation = () => {
@@ -8,7 +7,7 @@ const Presentation = () => {
       <div className={styles.presentation__image_cont}>
         <Image
           className={styles.presentation__image}
-          src={profile}
+          src="https://tse4.explicit.bing.net/th?id=OIP.lxGrRREqByKPrMOc5TiNKwHaGK&pid=Api&P=0&h=180"
           alt="image"
           width={110}
           height={120}
@@ -29,7 +28,6 @@ const Presentation = () => {
           <a
             className={styles.presentation__a}
             href="https://github.com/Momezz"
-            target="_blank"
           >
             <div
               className={
@@ -44,7 +42,6 @@ const Presentation = () => {
           <a
             className={styles.presentation__a}
             href="https://www.linkedin.com/in/juliangomezmejiamedellin/"
-            target="_blank"
           >
             <div
               className={

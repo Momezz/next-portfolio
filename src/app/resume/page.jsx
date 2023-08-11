@@ -1,5 +1,4 @@
 import styles from './resume.module.css';
-import profile from '../../../public/assets/images/profile.JPG';
 import Image from 'next/image';
 
 const Resume = () => {
@@ -19,7 +18,7 @@ const Resume = () => {
         <div className={styles.resume__image_container}>
           <Image
             className={styles.resume__image}
-            src={profile}
+            src="https://tse4.explicit.bing.net/th?id=OIP.lxGrRREqByKPrMOc5TiNKwHaGK&pid=Api&P=0&h=180"
             alt="image"
             width={110}
             height={120}

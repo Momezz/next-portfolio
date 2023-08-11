@@ -8,12 +8,12 @@ const Card = ({ element }) => {
       <Image
         className={styles.card__image}
         src={element.image}
-        alt={element.nameTechnology}
+        alt={element.ability}
         width={110}
         height={120}
         priority
       />
-      <h2 className={styles.card__title}>{element.nameTechnology}</h2>
+      <h2 className={styles.card__title}>{element.ability}</h2>
     </article>
   );
 };
