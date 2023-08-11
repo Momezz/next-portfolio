@@ -8,12 +8,12 @@
 }
 
 .skills_layout__title {
+  font-family: var(--text-general);
+  color: var(--font-color-title);
   margin-bottom: 30px;
   text-align: center;
-  font-family: var(--text-general);
   font-weight: 700;
   font-size: 25px;
-  color: var(--font-color-title);
 }
 
 .skills_layout__list {
@@ -30,5 +30,10 @@
 @media(min-width:768px) {
   .skills_layout__list {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .skills_layout__title {
+    font-size: 35px;
+    margin-bottom: 40px;
   }
 }

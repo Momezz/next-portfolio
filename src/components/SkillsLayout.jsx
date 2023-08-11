@@ -7,14 +7,26 @@ const SkillsLayout = async () => {
     return fetch(`${BASE_URL}api/skills`, { cache: 'no-store' })
       .then(res => res.json())
   }
-  const posts = await fetchPost();
+  const skills = await fetchPost();
+  const skillsTechnicals = skills.filter(skill => skill.classAbility === 'TECHNICAL');
+  const skillsSoft = skills.filter(skill => skill.classAbility === 'SOFT');
 
   return (
     <section className={styles.skills_layout__container}>
-      <h1 className={styles.skills_layout__title}>SIKILLS</h1>
+      <h1 className={styles.skills_layout__title}>Habilidades técnicas</h1>
       <ul className={styles.skills_layout__list}>
         {
-          posts.map((value) => (
+          skillsTechnicals.map((value) => (
+            <li className={styles.skills_layout__link} key={value._id}>
+              <Card element={value} />
+            </li>
+          ))
+        }
+      </ul>
+      <h1 className={styles.skills_layout__title}>Habilidades blandas</h1>
+      <ul className={styles.skills_layout__list}>
+        {
+          skillsSoft.map((value) => (
             <li className={styles.skills_layout__link} key={value._id}>
               <Card element={value} />
             </li>
