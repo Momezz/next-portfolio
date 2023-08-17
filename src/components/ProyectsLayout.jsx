@@ -1,7 +1,7 @@
 import styles from './proyectsLayout.module.css';
 import ProyectCard from './ProyectCard';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const ProyectsLayout = async () => {
   const fetchProyects = () => {
     return fetch(`${BASE_URL}api/proyects`, {

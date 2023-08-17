@@ -1,7 +1,7 @@
 import styles from './studies.module.css';
 import TrainingCard from './TrainingCard';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const Studies = async () => {
   const fetchPost = () => {
     return fetch(`${BASE_URL}api/studies`, { cache: 'no-store' })
