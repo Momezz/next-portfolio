@@ -1,7 +1,15 @@
 import styles from './resume.module.css';
 import Image from 'next/image';
 
-const Resume = () => {
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const Resume = async () => {
+  const fetchProfile = () => {
+    return fetch(`${BASE_URL}api/profile`, {
+      cache: "no-store",
+    }).then((res) => res.json());
+  };
+
+  const profile = await fetchProfile()
   return (
     <article className={styles.resume__container}>
       <div className={styles.resume__image_cont}>
@@ -18,7 +26,7 @@ const Resume = () => {
         <div className={styles.resume__image_container}>
           <Image
             className={styles.resume__image}
-            src="https://tse4.explicit.bing.net/th?id=OIP.lxGrRREqByKPrMOc5TiNKwHaGK&pid=Api&P=0&h=180"
+            src={profile[0].profilePicture}
             alt="image"
             width={110}
             height={120}

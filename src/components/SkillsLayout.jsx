@@ -1,7 +1,7 @@
 import styles from './skillsLayout.module.css';
 import Card from '../components/Card';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const SkillsLayout = async () => {
   const fetchPost = () => {
     return fetch(`${BASE_URL}api/skills`, { cache: 'no-store' })
