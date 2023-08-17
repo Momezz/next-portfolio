@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Carousel from '../../../components/Carousel';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const SingleProyect = async ({ params }) => {
   const { id } = params;
   const fetchProyect = () => {
