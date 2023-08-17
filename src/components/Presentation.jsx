@@ -1,13 +1,21 @@
 import styles from '../components/presentation.module.css';
 import Image from 'next/image';
 
-const Presentation = () => {
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const Presentation = async () => {
+  const fetchProfile = () => {
+    return fetch(`${BASE_URL}api/profile`, {
+      cache: "no-store",
+    }).then((res) => res.json());
+  };
+
+  const profile = await fetchProfile()
   return (
     <article className={styles.presentation__container}>
       <div className={styles.presentation__image_cont}>
         <Image
           className={styles.presentation__image}
-          src="https://tse4.explicit.bing.net/th?id=OIP.lxGrRREqByKPrMOc5TiNKwHaGK&pid=Api&P=0&h=180"
+          src={profile[0].profilePicture}
           alt="image"
           width={110}
           height={120}

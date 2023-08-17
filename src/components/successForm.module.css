@@ -1,0 +1,29 @@
+.success_form__container {
+  background-color: var(--main-background-success);
+  color: var(--text-error);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 350px;
+  display: flex;
+  width: 340px;
+}
+
+.success_form__title {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.success_form__paragraph {
+  font-size: 20px;
+}
+
+.success_form__button {
+  background-color: var(--text-error);
+  color: var(--font-color-title);
+  margin-top: 15px;
+  border: none;
+  width: 50px;
+}

@@ -5,6 +5,7 @@
   border: 2px solid var(--font-color-text);
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   margin-bottom: 40px;
   border-radius: 50%;
