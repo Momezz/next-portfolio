@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { createMessage } from '../redux/features/message/messageSlice';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
+import SccessForm from '../components/SuccessForm';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -40,8 +41,18 @@ const ContactForm = () => {
     },
   });
 
+
   return (
     <article className={styles.contact_form__container}>
+      <div
+        className={
+          typeof isFormSubmitted === "boolean"
+            ? styles.contact_form__success
+            : styles.contact_form__success_none
+        }
+      >
+        <SccessForm value={true} />
+      </div>
       <h2 className={styles.contact_form__title}> Contactame</h2>
       <p className={styles.contact_form__paragraph}>
         ¿Quieres contactarme?
@@ -76,7 +87,9 @@ const ContactForm = () => {
           required
         />
         <div className={styles.contact_form__error}>
-          {formik.errors.email && formik.touched.email ? formik.errors.email : ""}
+          {formik.errors.email && formik.touched.email
+            ? formik.errors.email
+            : ""}
         </div>
         <input
           type="text"
@@ -88,7 +101,9 @@ const ContactForm = () => {
           required
         />
         <div className={styles.contact_form__error}>
-          {formik.errors.subject && formik.touched.subject ? formik.errors.subject : ""}
+          {formik.errors.subject && formik.touched.subject
+            ? formik.errors.subject
+            : ""}
         </div>
         <textarea
           type="text"
@@ -101,7 +116,9 @@ const ContactForm = () => {
           required
         />
         <div className={styles.contact_form__error}>
-          {formik.errors.message && formik.touched.message ? formik.errors.message : ""}
+          {formik.errors.message && formik.touched.message
+            ? formik.errors.message
+            : ""}
         </div>
         <div className={styles.contact_form__cont_btn}>
           <button type="submit" className={styles.contact_form__btn}>
