@@ -1,27 +1,20 @@
 import styles from '../components/presentation.module.css';
 import Image from 'next/image';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
-const Presentation = async () => {
-  const fetchProfile = () => {
-    return fetch(`${BASE_URL}api/profile`, {
-      cache: "no-store",
-    }).then((res) => res.json());
-  };
-
-  const profile = await fetchProfile()
+const Presentation = () => {
   return (
     <article className={styles.presentation__container}>
       <div className={styles.presentation__image_cont}>
         <Image
           className={styles.presentation__image}
-          src={profile[0].profilePicture}
+          src="https://tse4.explicit.bing.net/th?id=OIP.lxGrRREqByKPrMOc5TiNKwHaGK&pid=Api&P=0&h=180"
           alt="image"
           width={110}
           height={120}
           priority
         />
       </div>
+      
       <div className={styles.presentation__text_cont}>
         <h2 className={styles.presentation__title}>
           Hola, mi nombre es Julian Gomez Mejia y construyo paginas Web
