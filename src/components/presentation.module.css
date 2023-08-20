@@ -1,3 +1,7 @@
+.presentation__container {
+  width: 100%;
+}
+
 .presentation__image_cont {
   align-items: center;
   display: flex;
@@ -56,10 +60,6 @@
   font-size: 35px;
 }
 
-.presentation__text {
-  color: var(--font-color-text);
-}
-
 .presentation__text_cont {
   font-family: var(--text-presentation);
   font-size: 18px;
@@ -72,8 +72,12 @@
 
 @media(min-width: 768px) {
   .presentation__container {
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.sS8lxiOuJuNQOroy3QLlcAHaCs&pid=Api&P=0&h=180');
     grid-template-areas: "item2 item1";
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 90px;
+    padding: 20px;
     display: grid;
   }
 

@@ -5,11 +5,11 @@
 
 :root {
   --main-background-transparent: #122045b6;
-  --main-background-gradient: #11304574;
+  --main-background-gradient: #11144574;
   --main-background-success: #6ee96e;
   --github-background-color: #F6F8FA;
   --github-background-nav: #0A2647;
-  --main-background-color: #122045;
+  --main-background-color: #281245;
   --button-menu-color: #80808042;
   --main-background-cv: #EEEFEF;
   --color-main-linkedin: #0A66C2;
@@ -17,7 +17,7 @@
   --font-color-title: #c4d1ec;
   --font-color-text: #c4d1ec;
   --text-title-cv: #000000;
-  --background-foter: #212e50;
+  --background-foter: #2a2150;
   --text-error: #e86f5c;
   --text-cv: #0D0D0D;
 

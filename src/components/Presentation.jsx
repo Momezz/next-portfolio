@@ -7,7 +7,7 @@ const Presentation = () => {
       <div className={styles.presentation__image_cont}>
         <Image
           className={styles.presentation__image}
-          src="https://tse4.explicit.bing.net/th?id=OIP.lxGrRREqByKPrMOc5TiNKwHaGK&pid=Api&P=0&h=180"
+          src="https://res.cloudinary.com/dgouwu7h7/image/upload/v1692068634/portfolio/6be76283c3a15d87322215bac1579256.jpg"
           alt="image"
           width={110}
           height={120}
@@ -18,12 +18,6 @@ const Presentation = () => {
         <h2 className={styles.presentation__title}>
           Hola, mi nombre es Julian Gomez Mejia y construyo paginas Web
         </h2>
-        <p className={styles.presentation__text}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-          iure tenetur esse dignissimos, aperiam maiores consequuntur iusto,
-          enim obcaecati quas nisi. Inventore adipisci ipsa saepe repellat,
-          dolorem odit consequatur quam!
-        </p>
         <div className={styles.presentation__links}>
           <a
             className={styles.presentation__a}
