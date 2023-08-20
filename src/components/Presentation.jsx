@@ -14,7 +14,6 @@ const Presentation = () => {
           priority
         />
       </div>
-      
       <div className={styles.presentation__text_cont}>
         <h2 className={styles.presentation__title}>
           Hola, mi nombre es Julian Gomez Mejia y construyo paginas Web
