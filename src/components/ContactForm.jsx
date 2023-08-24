@@ -1,8 +1,9 @@
 "use client";
 
+import styles from '../components/contactactForm.module.css';
 import { useState } from 'react';
 import SuccesForm from './SuccessForm';
-import styles from '../components/contactactForm.module.css';
+import SendingForm from './SendingForm';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 
@@ -10,6 +11,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const ContactForm = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(undefined);
   const [submittedForm, setSubmittedForm] = useState(false);
+  const [loading, setLoading] = useState(false);
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, "El nombre es muy corto")
@@ -33,7 +35,6 @@ const ContactForm = () => {
     },
     validationSchema,
     onSubmit: async (values) => {
-      console.log('url', BASE_URL);
       try {
         const response = await fetch(`${BASE_URL}api/messages`, {
           method: "POST",
@@ -43,8 +44,12 @@ const ContactForm = () => {
           body: JSON.stringify(values),
         });
         if (response) {
-          setIsFormSubmitted(response.ok);
           setSubmittedForm(true);
+          setLoading(true)
+          setTimeout(() => {
+            setLoading(false)
+            setIsFormSubmitted(response.ok);
+          }, 1000);
         } else {
           setIsFormSubmitted(false);
         }
@@ -56,16 +61,24 @@ const ContactForm = () => {
 
   return (
     <article className={styles.contact_form__container}>
-      <div
-        className={
-          typeof isFormSubmitted === "boolean"
-            ? styles.contact_form__success
-            : styles.contact_form__success_none
-        }
-      >
-        <SuccesForm value={isFormSubmitted} />
-      </div>
-      <h2 className={styles.contact_form__title}> Contactame</h2>
+      {
+        loading ?
+          <div className={styles.contact_form__success}>
+            <SendingForm />
+          </div>
+          :
+          <div
+            className={
+              typeof isFormSubmitted === "boolean"
+                ? styles.contact_form__success
+                : styles.contact_form__success_none
+            }
+          >
+            <SuccesForm value={isFormSubmitted} />
+          </div>
+      }
+
+      <h2 className={styles.contact_form__title}>Contactame</h2>
       <p className={styles.contact_form__paragraph}>
         ¿Quieres contactarme?
         <br />
