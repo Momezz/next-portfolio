@@ -51,7 +51,7 @@ const SuccessForm = ({ value }) => {
 };
 
 SuccessForm.propTypes = {
-  element: PropTypes.bool.isRequired,
+  value: PropTypes.bool,
 };
 
 export default SuccessForm;
