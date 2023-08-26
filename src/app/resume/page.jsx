@@ -2,7 +2,7 @@ import styles from './resume.module.css';
 import Image from 'next/image';
 
 const Resume = () => {
-  
+
   return (
     <article className={styles.resume__container}>
       <div className={styles.resume__image_cont}>
