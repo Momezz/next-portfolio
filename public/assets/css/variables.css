@@ -4,8 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@1,900&family=Philosopher:wght@400;700&display=swap");
 
 :root {
+  --container-color-input-loading: #4c4d50c9;
   --main-background-transparent: #122045b6;
   --main-background-gradient: #11144574;
+  --container-color-loading: #484e5a9f;
   --main-background-success: #6ee96e;
   --github-background-color: #F6F8FA;
   --github-background-nav: #0A2647;
