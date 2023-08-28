@@ -1,5 +1,5 @@
 .footer__container {
-  background-color: var(--background-foter);
+  background-color: var(--background-footer);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .footer__paragraph {
-  color: aliceblue;
+  color: var(--font-color-footer);
   text-align: center;
   font-size: 18px;
 }

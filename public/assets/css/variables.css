@@ -6,19 +6,20 @@
 :root {
   --container-color-input-loading: #4c4d50c9;
   --main-background-transparent: #122045b6;
-  --main-background-gradient: #11144574;
   --container-color-loading: #484e5a9f;
+  --main-background-gradient: #111445;
   --main-background-success: #6ee96e;
   --github-background-color: #F6F8FA;
-  --github-background-nav: #0A2647;
+  --github-background-nav: #242043;
   --main-background-color: #281245;
   --button-menu-color: #80808042;
   --color-main-linkedin: #0A66C2;
   --main-background-cv: #EEEFEF;
   --color-spinner-form: #2e4e75;
   --color-main-github: #1F2328;
+  --background-footer: #2a2150;
+  --font-color-footer: #e3e7ef;
   --font-color-title: #c4d1ec;
-  --background-foter: #2a2150;
   --font-color-text: #c4d1ec;
   --text-title-cv: #000000;
   --text-error: #e86f5c;
