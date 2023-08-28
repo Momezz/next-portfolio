@@ -1,6 +1,5 @@
 .navigation__container {
-  background: var(--main-background-color);
-  background: radial-gradient(circle, var(--main-background-color) 34%, var(--main-background-gradient) 95%);
+  background: radial-gradient(circle, var(--github-background-nav) 34%, var(--main-background-gradient) 95%);
   position: absolute;
   padding: 10px;
   height: 100%;

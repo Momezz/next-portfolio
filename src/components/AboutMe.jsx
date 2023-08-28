@@ -3,9 +3,16 @@ import styles from './aboutMe.module.css';
 const AboutMe = () => {
   return (
     <article className={styles.about_me__container}>
-      <h2 className={styles.about_me__title}>About me</h2>
+      <h2 className={styles.about_me__title}>Acerca de mí</h2>
       <p className={styles.about_me__paragraph}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eligendi error voluptates, reiciendis animi explicabo placeat at numquam accusantium vel veritatis quo iste ipsa, dolore doloremque dolorem voluptatum nobis deleniti.
+        Soy un desarrollador web con conocimientos y experiencia en HTML, CSS,
+        JavaScript, MongoDB, TypeScript, NodeJS, Git / GitHub, y frameworks como
+        React, Next.js y Express. Estoy constantemente actualizando mis habilidades para
+        mantenerme al día con las últimas tendencias y herramientas en el
+        desarrollo web. Me caracterizo por ser una persona responsable, y con
+        alta disposición en la realización de mi trabajo. Disfruto las labores
+        que representan un reto para mí y que me ofrecen la posibilidad de
+        desarrollarme a nivel personal y laboral
       </p>
     </article>
   )
