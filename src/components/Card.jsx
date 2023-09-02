@@ -6,12 +6,9 @@ const Card = ({ element }) => {
   return (
     <article className={styles.card__container}>
       <h2 className={styles.card__title}>{element.ability}</h2>
-      <div className={styles.card__level}>
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
+      <div className={styles.card__level_cont}>
+        <span className={styles.card__level_background}>{"☢".repeat(10)}</span>
+        <span className={styles.card__level}>{"☢".repeat(element.level)}</span>
       </div>
       <div className={styles.card__image_cont}>
         <Image
@@ -24,10 +21,11 @@ const Card = ({ element }) => {
         />
       </div>
       <div className={styles.card__skill_type_cont}>
-        <h3 className={styles.card__skill_type_title}>[Habilidad/Tecnica]</h3>
+        <h3 className={styles.card__skill_type_title}>
+          [Habilidad/{element.classAbility}]
+        </h3>
         <p className={styles.card__skill_type_paragraph}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-          enim eveniet.
+          {element.description}
         </p>
         <hr className={styles.card__skill_hr} />
       </div>
