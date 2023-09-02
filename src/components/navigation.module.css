@@ -1,5 +1,4 @@
 .navigation__container {
-  background: var(--main-background-color);
   background: radial-gradient(circle, var(--main-background-color) 34%, var(--main-background-gradient) 95%);
   position: absolute;
   padding: 10px;
@@ -30,8 +29,11 @@
 .navigation__button {
   background-color: var(--button-menu-color);
   color: var(--font-color-title);
+  justify-content: center;
+  align-items: center;
   font-weight: 900;
   font-size: 25px;
+  display: flex;
   border: none;
   height: 50px;
   width: 50px;
@@ -72,7 +74,6 @@
 }
 
 .navigation__navlink {
-
   text-decoration: none;
   color: var(--font-color-title);
   font-size: 21px;

@@ -19,7 +19,7 @@ const Resume = () => {
         <div className={styles.resume__image_container}>
           <Image
             className={styles.resume__image}
-            src="https://tse4.explicit.bing.net/th?id=OIP.lxGrRREqByKPrMOc5TiNKwHaGK&pid=Api&P=0&h=180"
+            src="https://res.cloudinary.com/dgouwu7h7/image/upload/v1692068634/portfolio/6be76283c3a15d87322215bac1579256.jpg"
             alt="image"
             width={110}
             height={120}

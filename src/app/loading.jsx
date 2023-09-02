@@ -10,8 +10,14 @@ const Laoding = () => {
         <div className={styles.load_preview__view_project_cont}></div>
         <div className={styles.load_preview__view_project_cont}></div>
         <div className={styles.load_preview__view_project_cont}></div>
+        <div className={styles.load_preview__view_project_cont}></div>
+        <div className={styles.load_preview__view_project_cont}></div>
+        <div className={styles.load_preview__view_project_cont}></div>
       </div>
       <div className={styles.load_preview__cont_left}>
+        <div className={styles.load_preview__view_project_cont}></div>
+        <div className={styles.load_preview__view_project_cont}></div>
+        <div className={styles.load_preview__view_project_cont}></div>
         <div className={styles.load_preview__view_project_cont}></div>
         <div className={styles.load_preview__view_project_cont}></div>
         <div className={styles.load_preview__view_project_cont}></div>
