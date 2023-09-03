@@ -1,6 +1,11 @@
 .navigation__container {
-  background: radial-gradient(circle, var(--main-background-color) 34%, var(--main-background-gradient) 95%);
-  position: absolute;
+  background: radial-gradient(
+    circle,
+    var(--main-background-color) 34%,
+    var(--main-background-gradient) 95%
+  );
+  position: fixed;
+  z-index: 1000;
   padding: 10px;
   height: 100%;
   width: 100%;
@@ -98,18 +103,18 @@
   display: block;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .navigation__ul_nav {
     flex-direction: row;
   }
 
   .navigation__container {
-    display: none;
-  }
-
-  .navigation__container_desktop {
     border-bottom: 7px double var(--font-color-title);
-    background-color: var(--github-background-nav);
+    background: radial-gradient(
+    circle,
+    var(--main-background-color) 34%,
+    var(--main-background-gradient) 95%
+  );
     justify-content: space-between;
     align-items: center;
     flex-direction: row;

@@ -10,9 +10,9 @@
   margin-bottom: 40px;
   align-items: center;
   text-align: center;
+  max-width: 350px;
   display: flex;
   padding: 7px;
-  width: 150px;
 }
 
 .card__title {
@@ -42,13 +42,21 @@
 
 .card__level_background {
   color: var(--color-level-background);
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  width: 100%;
 }
 
 .card__level {
   color: var(--color-level);
+  justify-content: end;
+  align-items: center;
   position: absolute;
+  display: flex;
   height: 20px;
-  right: 1px;
+  width: 100%;
+  left: -1px;
 }
 
 .card__image_cont {
@@ -101,8 +109,8 @@
 .card__skill_copyright {
   font-family: var(--text-copyright-card);
   text-align: right;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 1px;
-  font-size: 11px;
+  font-size: 10px;
   width: 100%;
 }
