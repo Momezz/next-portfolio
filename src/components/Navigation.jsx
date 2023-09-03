@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 const Navigation = () => {
   const [toogleMenu, setToggleMenu] = useState(false);
-
   const handleToggle = () => {
     setToggleMenu(!toogleMenu);
   };
@@ -25,12 +24,12 @@ const Navigation = () => {
       <header
         className={
           toogleMenu
-            ? styles.navigation__container_none + " " + styles.navigation__container_desktop
-            : styles.navigation__container + " " + styles.navigation__container_desktop
+            ? styles.navigation__container_none + " " + styles.navigation__container
+            : styles.navigation__container
         }
       >
         <Link
-        className={styles.navigation__navlink_logo}
+          className={styles.navigation__navlink_logo}
           href="/"
         >
           <div className={styles.navigation__cont_logo}>
