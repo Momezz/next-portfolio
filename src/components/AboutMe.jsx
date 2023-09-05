@@ -3,7 +3,6 @@ import styles from './aboutMe.module.css';
 const AboutMe = () => {
   return (
     <article className={styles.about_me__container}>
-      <h2 className={styles.about_me__title}>Acerca de mí</h2>
       <p className={styles.about_me__paragraph}>
         Soy un desarrollador web con conocimientos y experiencia en HTML, CSS,
         JavaScript, MongoDB, TypeScript, NodeJS, Git / GitHub, y frameworks como
