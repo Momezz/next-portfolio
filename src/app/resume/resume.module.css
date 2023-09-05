@@ -3,8 +3,8 @@
   font-family: var(--text-general);
   flex-direction: column;
   display: flex;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .resume__pdf_cont {
@@ -93,8 +93,8 @@
   text-align: center;
   font-weight: 200;
   font-size: 25px;
-  width: 300px;
   margin: 0 auto;
+  width: 300px;
 }
 
 .resume__subtitle_blue {
@@ -110,6 +110,7 @@
 @media(min-width: 768px) {
   .resume__container {
     flex-direction: row;
+    padding-top: 100px;
   }
 
   .resume__image_cont {

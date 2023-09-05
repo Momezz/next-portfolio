@@ -7,8 +7,8 @@ const Card = ({ element }) => {
     <article className={styles.card__container}>
       <h2 className={styles.card__title}>{element.ability}</h2>
       <div className={styles.card__level_cont}>
-        <span className={styles.card__level_background}>{"☢".repeat(10)}</span>
-        <span className={styles.card__level}>{"☢".repeat(element.level)}</span>
+        <div className={styles.card__level_background}>{"☢".repeat(10)}</div>
+        <div className={styles.card__level}>{"☢".repeat(element.level)}</div>
       </div>
       <div className={styles.card__image_cont}>
         <Image
