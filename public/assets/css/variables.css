@@ -3,13 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@1,900&family=Philosopher:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400&family=Kalam:wght@300;400;700&family=Lato:ital,wght@1,900&family=Philosopher:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Kalam:wght@300;400;700&family=Lato:ital,wght@1,900&family=Monoton&family=Philosopher:wght@400;700&family=Poppins:wght@400;700&display=swap');
 :root {
   --container-color-input-loading: #4c4d50c9;
   --main-background-transparent: #122045b6;
   --container-color-loading: #484e5a9f;
   --main-background-gradient: #3f2067;
+  --banner-background-right: #392257;
   --main-background-success: #6ee96e;
   --github-background-color: #F6F8FA;
+  --banner-background-left: #604d76;
   --color-level-background: #cec7c7;
   --github-background-nav: #242043;
   --main-background-color: #281245;
@@ -33,6 +36,7 @@
   --text-title-presentation: "Philosopher", sans-serif;
   --text-general: "Philosopher", sans-serif;
   --text-linkedin-logo: "Lato", sans-serif;
+  --text-title-banner: 'Monoton', cursive;
   --text-copyright-card: 'Handjet';
   --text-presentation: "Kalam";
 }

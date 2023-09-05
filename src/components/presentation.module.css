@@ -1,26 +1,17 @@
 .presentation__container {
+  background: url('https://res.cloudinary.com/dgouwu7h7/image/upload/v1693871470/portfolio/499dcc4deb1b9e76ee7f2aebf47cabb1.png');
+  background-repeat: no-repeat;
+  position: relative;
+  height: 360px;
   width: 100%;
-}
 
-.presentation__image_cont {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
-.presentation__image {
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  display: flex;
-  height: 140px;
-  width: 140px;
 }
 
 .presentation__links {
-  margin-top: 15px;
+  position: absolute;
   display: flex;
+  bottom: 20px;
+  right: 0;
 }
 
 .presentation__logos {
@@ -52,12 +43,17 @@
 }
 
 .presentation__title {
-  font-family: var(--text-title-presentation);
+  border: 2px solid var(--font-color-title);
+  font-family: var(--text-title-banner);
   color: var(--font-color-title);
-  margin-bottom: 30px;
+  text-align: center;
   line-height: 40px;
-  font-weight: 700;
-  font-size: 35px;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 2px;
+  width: 70vw;
 }
 
 .presentation__text_cont {
@@ -70,15 +66,19 @@
   margin-right: 20px;
 }
 
+@media(min-width: 500px) {
+  .presentation__container {
+    background-size: cover;
+  }
+}
+
 @media(min-width: 768px) {
   .presentation__container {
-    background-image: url('https://tse2.mm.bing.net/th?id=OIP.sS8lxiOuJuNQOroy3QLlcAHaCs&pid=Api&P=0&h=180');
+    background-image: url('https://res.cloudinary.com/dgouwu7h7/image/upload/v1693883899/portfolio/7592b33effecc662ba27ac6b7a7f8887.png');
     grid-template-areas: "item2 item1";
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 90px;
+    margin-top: 10px;
+    height: 500px;
     padding: 20px;
-    display: grid;
   }
 
   .presentation__text_cont {
@@ -87,25 +87,29 @@
     width: 90%;
   }
 
-  .presentation__image_cont {
-    flex-basis: auto;
-    grid-area: item1;
-  }
-
-  .presentation__image {
-    height: 240px;
-    width: 240px;
-  }
-
   .presentation__title {
-    font-size: 40px;
+    border: 3px solid var(--font-color-title);
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    justify-content: center;
+    white-space: nowrap;
+    align-items: center;
+    margin-right: -80px;
+    margin-top: 21px;
+    font-size: 15px;
+    display: flex;
+    width: 60px;
+  }
+
+  .presentation__links {
+    right: 100px;
   }
 }
 
 @media (min-width: 1440px) {
-  .presentation__image {
-    height: 260px;
-    width: 260px;
+  .presentation__container {
+    height: 600px;
+
   }
 
   .presentation__text_cont {
@@ -113,6 +117,8 @@
   }
 
   .presentation__title {
-    font-size: 50px;
+    margin-right: -100px;
+    margin-top: 40px;
+    font-size: 18px;
   }
 }

@@ -79,8 +79,8 @@
 }
 
 .navigation__navlink {
-  text-decoration: none;
   color: var(--font-color-title);
+  text-decoration: none;
   font-size: 21px;
 }
 
