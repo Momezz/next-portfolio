@@ -1,5 +1,6 @@
 .layout__container {
   background-color: var(--main-background-color);
+  padding-bottom: 90px;
 }
 
 .layout__navigation {
