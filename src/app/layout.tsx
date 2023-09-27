@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import Provider from '@/redux/providers';
+import styles from './layout.module.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,12 +20,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html className={styles.layout__container} lang="en">
+      <body className={styles.layout__body}>
         <Provider>
-          <Navigation />
+          <nav className={styles.layout__navigation}>
+            <Navigation />
+          </nav>
           {children}
-          <Footer />
+          <footer className={styles.layout__footer}>
+            <Footer />
+          </footer>
         </Provider>
       </body>
     </html>

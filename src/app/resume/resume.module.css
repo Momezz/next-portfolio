@@ -1,5 +1,4 @@
 .resume__container {
-  background-color: var(--main-background-color);
   font-family: var(--text-general);
   flex-direction: column;
   display: flex;

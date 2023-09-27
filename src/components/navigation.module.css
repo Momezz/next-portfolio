@@ -1,14 +1,13 @@
 .navigation__container {
-  background: radial-gradient(
-    circle,
-    var(--main-background-color) 34%,
-    var(--main-background-gradient) 95%
-  );
+  background: radial-gradient(circle,
+      var(--main-background-color) 34%,
+      var(--main-background-gradient) 95%);
   position: fixed;
   z-index: 1000;
   padding: 10px;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  top: 0;
 }
 
 .navigation__navlink_logo {
@@ -110,11 +109,9 @@
 
   .navigation__container {
     border-bottom: 7px double var(--font-color-title);
-    background: radial-gradient(
-    circle,
-    var(--main-background-color) 34%,
-    var(--main-background-gradient) 95%
-  );
+    background: radial-gradient(circle,
+        var(--main-background-color) 34%,
+        var(--main-background-gradient) 95%);
     justify-content: space-between;
     align-items: center;
     flex-direction: row;

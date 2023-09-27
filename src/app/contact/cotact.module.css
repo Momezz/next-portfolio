@@ -6,3 +6,9 @@
   display: flex;
   width: 100%;
 }
+
+@media(min-width:1040px) {
+  .contac__container {
+    padding: 150px;
+  }
+}

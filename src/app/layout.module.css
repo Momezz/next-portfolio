@@ -1,0 +1,14 @@
+.layout__container {
+  background-color: var(--main-background-color);
+}
+
+.layout__navigation {
+  width: 100%;
+}
+
+.layout__footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
