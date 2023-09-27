@@ -1,5 +1,4 @@
-.portfolio__container{
-  background-color: var(--main-background-color);
+.portfolio__container {
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -8,8 +7,8 @@
   width: 100%;
 }
 
-@media(min-width: 768px){
-  .portfolio__container{
+@media(min-width: 768px) {
+  .portfolio__container {
     padding: 45px;
   }
 }

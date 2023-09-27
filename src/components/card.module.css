@@ -1,10 +1,8 @@
 .card__container {
   border: 4px solid var(--border-color-card);
-  background: linear-gradient(
-    286deg,
-    var(--gradient-color-1) 2%,
-    var(--gradient-color-2) 100%
-  );
+  background: linear-gradient(286deg,
+      var(--gradient-color-1) 2%,
+      var(--gradient-color-2) 100%);
   justify-content: center;
   flex-direction: column;
   margin-bottom: 40px;
@@ -35,7 +33,7 @@
   align-items: center;
   position: relative;
   margin-top: 2px;
-  font-size: 13px;
+  font-size: 11px;
   display: flex;
   padding: 1px;
   width: 100%;
@@ -43,21 +41,23 @@
 
 .card__level_background {
   color: var(--color-level-background);
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  margin: 1px;
   display: flex;
   width: 100%;
 }
 
 .card__level {
   color: var(--color-level);
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   position: absolute;
+  margin: 1px;
   display: flex;
   height: 20px;
   width: 100%;
-  left: -1px;
+  left: -3px;
 }
 
 .card__image_cont {
