@@ -8,9 +8,15 @@ export default function Home() {
   return (
     <main className={styles.home_page__container}>
       <h1 className={styles.home_page__title}>Julian Gómez Mejia</h1>
-      <Presentation />
-      <AboutMe />
-      <SkillsLayout />
+      <article className={styles.home_page__presentation}>
+        <Presentation />
+      </article>
+      <article>
+        <AboutMe />
+      </article>
+      <section className={styles.home_page__skills_layout}>
+        <SkillsLayout />
+      </section>
       <Studies />
     </main>
   )

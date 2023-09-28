@@ -13,6 +13,17 @@
   font-size: 18px;
 }
 
+.home_page__presentation {
+  width: 100%;
+}
+
+.home_page__skills_layout {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
 @media(min-width: 768px) {
   .home_page__container {
     padding: 45px;

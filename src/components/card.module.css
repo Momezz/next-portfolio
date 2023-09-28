@@ -10,8 +10,7 @@
   text-align: center;
   display: flex;
   padding: 7px;
-  margin: 10px;
-  width: 350px;
+  margin: 5px;
 }
 
 .card__title {
@@ -27,14 +26,14 @@
   width: 100%;
 }
 
-
 .card__level_cont {
   justify-content: right;
   align-items: center;
   position: relative;
   margin-top: 2px;
-  font-size: 11px;
+  font-size: 10px;
   display: flex;
+  height: 15px;
   padding: 1px;
   width: 100%;
 }
@@ -43,8 +42,9 @@
   color: var(--color-level-background);
   justify-content: flex-end;
   align-items: center;
-  margin: 1px;
+  letter-spacing: 2px;
   display: flex;
+  margin: 1px;
   width: 100%;
 }
 
@@ -52,10 +52,10 @@
   color: var(--color-level);
   justify-content: flex-end;
   align-items: center;
+  letter-spacing: 2px;
   position: absolute;
-  margin: 1px;
   display: flex;
-  height: 20px;
+  margin: 1px;
   width: 100%;
   left: -3px;
 }
