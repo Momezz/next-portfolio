@@ -77,7 +77,7 @@ const Resume = () => {
         <h2 className={styles.resume__contact_title}>Competencias</h2>
         <ul className={styles.resume__skills}>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               SCRUM:
             </label>
             <progress
@@ -88,7 +88,7 @@ const Resume = () => {
             ></progress>
           </li>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               JavaScript:
             </label>
             <progress
@@ -99,7 +99,7 @@ const Resume = () => {
             ></progress>
           </li>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               Node.js:
             </label>
             <progress
@@ -110,7 +110,7 @@ const Resume = () => {
             ></progress>
           </li>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               MongoDB:
             </label>
             <progress
@@ -121,7 +121,7 @@ const Resume = () => {
             ></progress>
           </li>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               Express:
             </label>
             <progress
@@ -132,7 +132,7 @@ const Resume = () => {
             ></progress>
           </li>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               git / github:
             </label>
             <progress
@@ -143,7 +143,7 @@ const Resume = () => {
             ></progress>
           </li>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               React:
             </label>
             <progress
@@ -154,7 +154,7 @@ const Resume = () => {
             ></progress>
           </li>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               CSS:
             </label>
             <progress
@@ -165,7 +165,7 @@ const Resume = () => {
             ></progress>
           </li>
           <li className={styles.resume__contac_item}>
-            <label className={styles.resume__label_skill} for="progress">
+            <label className={styles.resume__label_skill} htmlFor="progress">
               HTML:
             </label>
             <progress

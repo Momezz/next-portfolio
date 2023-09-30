@@ -11,7 +11,6 @@
   display: flex;
   padding: 7px;
   margin: 10px;
-  width: 350px;
 }
 
 .card__title {
@@ -33,7 +32,7 @@
   align-items: center;
   position: relative;
   margin-top: 2px;
-  font-size: 11px;
+  font-size: 10px;
   display: flex;
   padding: 1px;
   width: 100%;
@@ -42,20 +41,22 @@
 .card__level_background {
   color: var(--color-level-background);
   justify-content: flex-end;
+  letter-spacing: 2px;
   align-items: center;
-  margin: 1px;
   display: flex;
+  margin: 1px;
   width: 100%;
 }
 
 .card__level {
   color: var(--color-level);
   justify-content: flex-end;
+  letter-spacing: 2px;
   align-items: center;
   position: absolute;
-  margin: 1px;
   display: flex;
   height: 20px;
+  margin: 1px;
   width: 100%;
   left: -3px;
 }
