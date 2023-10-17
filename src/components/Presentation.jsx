@@ -11,6 +11,7 @@ const Presentation = () => {
           <a
             className={styles.presentation__a}
             href="https://github.com/Momezz"
+            target="_blank"
           >
             <div
               className={
@@ -25,6 +26,7 @@ const Presentation = () => {
           <a
             className={styles.presentation__a}
             href="https://www.linkedin.com/in/juliangomezmejiamedellin/"
+            target="_blank"
           >
             <div
               className={
