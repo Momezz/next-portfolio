@@ -25,8 +25,8 @@ const Carousel = ({ images }) => {
         <Image
           className={styles.carousel__image}
           src={images[currentImage]}
-          width={110}
-          height={120}
+          width={380}
+          height={0}
           alt="imagen"
         />
       </div>
