@@ -15,7 +15,9 @@
 }
 
 .carousel__image {
-  height: 80%;
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 
@@ -25,18 +27,21 @@
   position: absolute;
   display: flex;
   width: 100%;
-  top: 44px;
+  top: 70px;
 }
 
 .carousel__btn {
-  background-color: var(--main-background-transparent);
+  background-color: transparent;
   font-family: var(--text-title-presentation);
   color: var(--font-color-title);
-  border-radius: 50%;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 900;
+  font-size: 35px;
   height: 40px;
   margin: 8px;
   border: none;
   width: 35px;
+}
+
+.carousel__btn:hover {
+  color: var(--main-background-gradient);
 }

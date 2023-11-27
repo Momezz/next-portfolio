@@ -17,8 +17,8 @@
 }
 
 .proyect_card__link {
-  background-color: rgba(128, 128, 128, 0.352);
   border-bottom: 2px solid var(--font-color-title);
+  background-color: rgba(128, 128, 128, 0.352);
   border-top: 2px solid var(--font-color-title);
   border-radius: 0px 15px 0px 0px;
   color: var(--font-color-title);
@@ -41,6 +41,7 @@
 
 .proyect_card__img {
   width: 320px;
+  height: 100%;
 }
 
 .proyect_card__text {

@@ -25,8 +25,8 @@ const ProyectCard = ({ element, index }) => {
           className={styles.proyect_card__img}
           src={element.images[0]}
           alt="image"
-          width={110}
-          height={120}
+          width={320}
+          height={0}
           priority
         />
       </div>
