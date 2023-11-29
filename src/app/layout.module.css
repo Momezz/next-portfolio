@@ -1,6 +1,7 @@
 .layout__container {
   background-color: var(--main-background-color);
   padding-bottom: 90px;
+  height: 100%;
 }
 
 .layout__navigation {
@@ -8,8 +9,6 @@
 }
 
 .layout__footer {
-  position: fixed;
+  margin-top: 40px;
   width: 100%;
-  bottom: 0;
-  left: 0;
 }
