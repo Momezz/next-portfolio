@@ -4,7 +4,6 @@
   position: relative;
   height: 360px;
   width: 100%;
-
 }
 
 .presentation__links {
@@ -109,7 +108,6 @@
 @media (min-width: 1440px) {
   .presentation__container {
     height: 600px;
-
   }
 
   .presentation__text_cont {
