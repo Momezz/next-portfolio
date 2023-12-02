@@ -4,6 +4,7 @@ import styles from './carousel.module.css';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Image from 'next/image';
+import { AiOutlineCaretRight, AiFillCaretLeft } from "react-icons/ai";
 
 const Carousel = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -36,14 +37,14 @@ const Carousel = ({ images }) => {
           onClick={lastImage}
           type="button"
         >
-          &lt;
+          <AiFillCaretLeft />
         </button>
         <button
           className={styles.carousel__btn}
           onClick={nextImage}
           type="button"
         >
-          &gt;
+          <AiOutlineCaretRight />
         </button>
       </div>
     </article>
