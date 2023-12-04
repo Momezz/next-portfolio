@@ -12,23 +12,20 @@ const ProyectCard = ({ element, index }) => {
           : styles.proyect_card__invested + " " + styles.proyect_card__container
       }
     >
-      <div className={styles.proyect_card__see}>
+      <div className={styles.proyect_card__cont_img}>
         <Link
           className={styles.proyect_card__link}
           href={`/portfolio/${element._id}`}
         >
-          Ver más detalles
+          <Image
+            className={styles.proyect_card__img}
+            src={element.images[0]}
+            alt="image"
+            width={320}
+            height={0}
+            priority
+          />
         </Link>
-      </div>
-      <div className={styles.proyect_card__cont_img}>
-        <Image
-          className={styles.proyect_card__img}
-          src={element.images[0]}
-          alt="image"
-          width={110}
-          height={120}
-          priority
-        />
       </div>
       <div>
         <h2 className={styles.proyect_card__title}>{element.title}</h2>
@@ -61,7 +58,7 @@ const ProyectCard = ({ element, index }) => {
           </div>
           <div className={styles.proyect_card__btn}>
             <a
-              className={styles.proyect_card__a}
+              className={styles.proyect_card__a_right + " " + styles.proyect_card__a}
               href={element.pageLink}
               target="_blank"
             >

@@ -61,7 +61,7 @@ const SingleProyect = async ({ params }) => {
           </div>
           <div className={styles.single_proyec__btn}>
             <a
-              className={styles.single_proyec__a}
+              className={styles.single_proyec__a_right + " " + styles.single_proyec__a}
               href={proyect.pageLink}
               target="_blank"
             >
