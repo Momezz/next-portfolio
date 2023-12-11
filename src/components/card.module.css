@@ -3,11 +3,9 @@
   background: linear-gradient(286deg,
       var(--gradient-color-1) 2%,
       var(--gradient-color-2) 100%);
-  justify-content: center;
   flex-direction: column;
   margin-bottom: 40px;
   align-items: center;
-  text-align: center;
   display: flex;
   padding: 7px;
   margin: 10px;
@@ -25,7 +23,6 @@
   padding: 3px;
   width: 100%;
 }
-
 
 .card__level_cont {
   justify-content: right;
