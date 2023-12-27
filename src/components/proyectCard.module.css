@@ -6,6 +6,7 @@
   align-items: center;
   border-radius: 5px;
   text-align: center;
+  position: relative;
   font-size: 18px;
   display: flex;
   margin: 15px;
@@ -21,8 +22,17 @@
 }
 
 .proyect_card__img {
+  transition: transform 0.5s ease;
   width: 320px;
   height: 100%;
+}
+
+.proyect_card__img:hover {
+  transform: scale(1.1);
+}
+
+.proyect_card__qr_icon {
+  display: none;
 }
 
 .proyect_card__title {
@@ -124,6 +134,24 @@
     max-width: 900px;
     font-size: 25px;
     height: 350px;
+  }
+
+  .proyect_card__qr_icon {
+    transition: transform 0.5s ease;
+    color: var(--font-color-title);
+    background-color: transparent;
+    position: absolute;
+    font-size: 35px;
+    display: block;
+    border: none;
+    height: 40px;
+    width: 40px;
+    left: 35px;
+    top: 20px;
+  }
+
+  .proyect_card__qr_icon:hover {
+    transform: scale(1.1);
   }
 
   .proyect_card__invested {

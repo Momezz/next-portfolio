@@ -1,9 +1,22 @@
+"use client";
+
 import styles from '../components/proyectCard.module.css';
+import { useState } from 'react';
+import { AiOutlineQrcode } from 'react-icons/ai';
+import SccanableQR from '../components/ScannableQR';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const ProyectCard = ({ element, index }) => {
+  const [showModal, setShowModal] = useState(false);
+  const showModalHandler = () => {
+    setShowModal(true);
+  };
+  const hideModalHandler = () => {
+    setShowModal(false);
+  };
+
   return (
     <article
       className={
@@ -28,6 +41,15 @@ const ProyectCard = ({ element, index }) => {
         </Link>
       </div>
       <div>
+        {element.qrImage ? (
+          <button
+            title="Ver en mi movil"
+            className={styles.proyect_card__qr_icon}
+            onClick={showModalHandler}
+          >
+            <AiOutlineQrcode />
+          </button>
+        ) : null}
         <h2 className={styles.proyect_card__title}>{element.title}</h2>
         <h5 className={styles.proyect_card__title_table}>
           Pincipales tecnologías que utilicé
@@ -58,7 +80,9 @@ const ProyectCard = ({ element, index }) => {
           </div>
           <div className={styles.proyect_card__btn}>
             <a
-              className={styles.proyect_card__a_right + " " + styles.proyect_card__a}
+              className={
+                styles.proyect_card__a_right + " " + styles.proyect_card__a
+              }
               href={element.pageLink}
               target="_blank"
             >
@@ -66,6 +90,11 @@ const ProyectCard = ({ element, index }) => {
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        {showModal ? (
+          <SccanableQR qr={element.qrImage} closeModal={hideModalHandler} />
+        ) : null}
       </div>
     </article>
   );
