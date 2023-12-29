@@ -4,7 +4,7 @@ import styles from './carousel.module.css';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Image from 'next/image';
-import { AiOutlineCaretRight, AiFillCaretLeft } from "react-icons/ai";
+import { AiOutlineCaretRight, AiFillCaretLeft } from 'react-icons/ai';
 
 const Carousel = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(0);
