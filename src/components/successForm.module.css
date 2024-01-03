@@ -1,5 +1,5 @@
 .success_form__container {
-  background-color: var(--main-background-success);
+  background-color: var(--background-footer);
   color: var(--text-error);
   justify-content: center;
   flex-direction: column;
@@ -21,9 +21,24 @@
 }
 
 .success_form__button {
-  background-color: var(--text-error);
-  color: var(--font-color-title);
-  margin-top: 15px;
-  border: none;
-  width: 50px;
+  border: 1px solid var(--font-color-title);
+  background-color: var(--font-color-text);
+  color: var(--main-background-color);
+  transition: transform 0.5s ease;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  display: flex;
+  height: 50px;
+  width: 200px;
+}
+
+.success_form__button:hover {
+  box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  -webkit-box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  -moz-box-shadow: -2px 0px 14px 0px rgba(129, 149, 188, 0.75);
+  transform: scale(1.1);
 }

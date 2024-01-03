@@ -21,7 +21,7 @@ const SuccessForm = ({ value }) => {
                 Gracias por tu mensaje. Me pondre en contacto contigo pronto.
               </p>
               <button
-              className={styles.success_form__button}
+                className={styles.success_form__button}
                 type="button" onClick={handleClick}>
                 OK
               </button>
