@@ -1,8 +1,8 @@
 .card__container {
   border: 4px solid var(--border-color-card);
   background: linear-gradient(286deg,
-      var(--gradient-color-1) 2%,
-      var(--gradient-color-2) 100%);
+      var(--gradient-color-uno) 2%,
+      var(--gradient-color-dos) 100%);
   flex-direction: column;
   margin-bottom: 40px;
   align-items: center;
