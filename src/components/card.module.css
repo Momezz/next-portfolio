@@ -17,45 +17,12 @@
   -moz-box-shadow: -2px 0px 14px 0px rgba(15, 25, 44, 0.75);
   color: var(--border-color-card);
   align-items: center;
+  margin-bottom: 10px;
   font-size: 10px;
   display: flex;
   height: 17px;
   padding: 3px;
   width: 100%;
-}
-
-.card__level_cont {
-  justify-content: right;
-  align-items: center;
-  position: relative;
-  margin-top: 2px;
-  font-size: 10px;
-  display: flex;
-  padding: 1px;
-  width: 100%;
-}
-
-.card__level_background {
-  color: var(--color-level-background);
-  justify-content: flex-end;
-  letter-spacing: 2px;
-  align-items: center;
-  display: flex;
-  margin: 1px;
-  width: 100%;
-}
-
-.card__level {
-  color: var(--color-level);
-  justify-content: flex-end;
-  letter-spacing: 2px;
-  align-items: center;
-  position: absolute;
-  display: flex;
-  height: 20px;
-  margin: 1px;
-  width: 100%;
-  left: -3px;
 }
 
 .card__image_cont {
