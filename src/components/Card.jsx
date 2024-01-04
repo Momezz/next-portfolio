@@ -6,18 +6,6 @@ const Card = ({ element }) => {
   return (
     <article className={styles.card__container}>
       <h2 className={styles.card__title}>{element.ability}</h2>
-      <div className={styles.card__level_cont}>
-        <div className={styles.card__level_background}>
-          {Array.from({ length: 10 }, (_, index) => (
-            <span key={index}>☢</span>
-          ))}
-        </div>
-        <div className={styles.card__level}>
-          {Array.from({ length: element.level }, (_, index) => (
-            <span key={index}>☢</span>
-          ))}
-        </div>
-      </div>
       <div className={styles.card__image_cont}>
         <Image
           className={styles.card__image}
