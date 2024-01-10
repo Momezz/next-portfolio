@@ -1,16 +1,16 @@
-/* components/Loading.module.css */
 .sending_form__loading {
+  background-color: var(--background-footer);
   justify-content: center;
   flex-direction: column;
   align-items: center;
   display: flex;
-  height: 100vh;
+  height: 150px;
+  width: 150px;
 }
 
 .sending_form__spinner {
   border-top: 4px solid var(--color-spinner-form);
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  animation: spin 1s linear infinite;
+  animation: spin 3s infinite;
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -26,6 +26,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
