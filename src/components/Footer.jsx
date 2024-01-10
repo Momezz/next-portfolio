@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../components/footer.module.css';
 import {
   AiFillPhone,
@@ -37,7 +38,9 @@ const Footer = () => {
             <span className={styles.footer__icon}>
               <AiFillMail />
             </span>
-            <p className={styles.footer__icon_text}>julgomez14@gmail.com</p>
+            <Link className={styles.footer__icon_a} href="/contact">
+              <p className={styles.footer__icon_text}>julgomez14@gmail.com</p>
+            </Link>
           </div>
           <div className={styles.footer__links_container}>
             <a
