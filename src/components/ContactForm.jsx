@@ -6,11 +6,10 @@ import SuccesForm from './SuccessForm';
 import SendingForm from './SendingForm';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
+import { sendMail } from '../services/messages'
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const ContactForm = () => {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(undefined);
-  const [submittedForm, setSubmittedForm] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState('');
   const [loading, setLoading] = useState(false);
   const validationSchema = Yup.object().shape({
     name: Yup.string()
@@ -35,26 +34,21 @@ const ContactForm = () => {
     },
     validationSchema,
     onSubmit: async (values) => {
+      if (values) {
+        setLoading(true)
+        setTimeout(() => {
+          setLoading(false)
+          setIsFormSubmitted(true);
+        }, 2000);
+      }
       try {
-        const response = await fetch(`${BASE_URL}api/messages`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
-        });
-        if (response) {
-          setSubmittedForm(true);
-          setLoading(true)
-          setTimeout(() => {
-            setLoading(false)
-            setIsFormSubmitted(response.ok);
-          }, 1000);
-        } else {
-          setIsFormSubmitted(false);
-        }
+        const res = await sendMail(values);
       } catch (error) {
-        throw new Error(error);
+        setLoading(true)
+        setTimeout(() => {
+          setLoading(false)
+          setIsFormSubmitted(false);
+        }, 2000);
       }
     },
   });
@@ -77,7 +71,6 @@ const ContactForm = () => {
             <SuccesForm value={isFormSubmitted} />
           </div>
       }
-
       <h2 className={styles.contact_form__title}>Contactame</h2>
       <p className={styles.contact_form__paragraph}>
         ¿Quieres contactarme?
@@ -146,7 +139,7 @@ const ContactForm = () => {
             : ""}
         </div>
         <div className={styles.contact_form__cont_btn}>
-          <button type="submit" className={styles.contact_form__btn} disabled={submittedForm}>
+          <button type="submit" className={styles.contact_form__btn}>
             Enviar mensaje
           </button>
         </div>
