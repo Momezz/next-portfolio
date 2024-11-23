@@ -1,12 +1,17 @@
+import { FaGithub } from 'react-icons/fa';
+import { CiLinkedin } from 'react-icons/ci';
 import styles from '../components/presentation.module.css';
 
 const Presentation = () => {
   return (
     <article className={styles.presentation__container}>
+      <div className={styles.presentation__layer}>
+        <h1>
+          Momezz: Desarrollo Web Innovador
+        </h1>
+        <p className={styles.presentation__paragraph}>Transformando ideas en experiencias digitales cautivadoras.</p>
+      </div>
       <div className={styles.presentation__text_cont}>
-        <h2 className={styles.presentation__title}>
-          DESARROLLADOR WEB
-        </h2>
         <div className={styles.presentation__links}>
           <a
             className={styles.presentation__a}
@@ -20,7 +25,7 @@ const Presentation = () => {
                 styles.presentation__logos
               }
             >
-              GitHub
+              <FaGithub />
             </div>
           </a>
           <a
@@ -35,7 +40,7 @@ const Presentation = () => {
                 styles.presentation__logos
               }
             >
-              in
+              <CiLinkedin />
             </div>
           </a>
         </div>

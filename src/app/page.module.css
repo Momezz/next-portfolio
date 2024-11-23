@@ -15,10 +15,6 @@
 }
 
 @media(min-width: 768px) {
-  .home_page__container {
-    padding: 45px;
-  }
-
   .home_page__title {
     color: var(--font-color-title);
     margin-top: 100px;
