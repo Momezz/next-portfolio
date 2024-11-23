@@ -3,6 +3,7 @@
   color: var(--font-color-text);
   margin-bottom: 22px;
   position: relative;
+  border-radius: 5px;
   margin-top: 140px;
   padding: 15px;
   width: 400px;
@@ -55,6 +56,7 @@
   background-color: var(--main-background-color);
   font-family: var(--text-title-presentation);
   color: var(--font-color-title);
+  border-radius: 5px;
   font-weight: 700;
   width: 220px;
   height: 45px;

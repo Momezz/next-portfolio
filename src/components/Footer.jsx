@@ -26,7 +26,7 @@ const Footer = () => {
             <p className={styles.footer__icon_text}>
               <a
                 className={styles.footer__icon_a}
-                href="http://wa.me/573007787096?text=Hola Julian."
+                href="http://wa.me/573007787096?text=Hola."
                 target="_blank"
                 rel="noopener noreferrer"
               >
