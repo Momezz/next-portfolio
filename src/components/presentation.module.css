@@ -24,8 +24,11 @@
   padding: 0;
 }
 
+.presentation__banner_title {
+  color: var(--github-background-color);
+}
 .presentation__paragraph {
-  color: var(--font-color-text);
+  color: var(--github-background-color);
   font-size: 18px;
 }
 
@@ -34,7 +37,7 @@
   font-size: 18px;
 }
 
-.presentation__links {
+.presentation__links_container {
   position: absolute;
   align-items: start;
   display: flex;
@@ -43,10 +46,23 @@
 }
 
 .presentation__a {
-  text-decoration: none;
-  margin-right: 20px;
+  background-color: var(--main-background-color);
+  color: var(--font-color-footer);
+  transition: transform 0.5s ease;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 25px;
+  display: flex;
+  height: 45px;
+  margin: 10px;
+  width: 45px;
+  padding: 0;
 }
 
+.presentation__a:hover {
+  transform: scale(1.1);
+}
 .presentation__logo_github {
   background-color: var(--github-background-color);
   color: var(--color-main-github);
