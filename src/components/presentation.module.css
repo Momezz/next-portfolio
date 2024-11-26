@@ -1,16 +1,72 @@
 .presentation__container {
-  background: url('https://res.cloudinary.com/dgouwu7h7/image/upload/v1693871470/portfolio/499dcc4deb1b9e76ee7f2aebf47cabb1.png');
+  background: url('https://cdn.gamma.app/n15u4xnkbrh7fpd/generated-images/x6IhILtdQ8Tphqg-7WD0G.jpg');
+  background-position: center bottom;
+  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   height: 360px;
   width: 100%;
 }
 
-.presentation__links {
+.presentation__layer {
+  background-color: rgba(0, 0, 0, 0.852);
+  color: var(--font-color-text);
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.presentation__banner_title {
+  color: var(--github-background-color);
+}
+.presentation__paragraph {
+  color: var(--github-background-color);
+  font-size: 18px;
+}
+
+.presentation__text_cont {
+  font-family: var(--text-presentation);
+  font-size: 18px;
+}
+
+.presentation__links_container {
+  position: absolute;
+  align-items: start;
   display: flex;
   bottom: 20px;
-  right: 0;
+  right: 20px;
+}
+
+.presentation__a {
+  background-color: var(--main-background-color);
+  color: var(--font-color-footer);
+  transition: transform 0.5s ease;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 25px;
+  display: flex;
+  height: 45px;
+  margin: 10px;
+  width: 45px;
+  padding: 0;
+}
+
+.presentation__a:hover {
+  transform: scale(1.1);
+}
+.presentation__logo_github {
+  background-color: var(--github-background-color);
+  color: var(--color-main-github);
+  width: 35px;
 }
 
 .presentation__logos {
@@ -31,92 +87,16 @@
 
 .presentation__logo_linkedin {
   background-color: var(--color-main-linkedin);
-  color: #FFFFFF;
+  color: var(--font-color-text);
   width: 35px;
-}
-
-.presentation__logo_github {
-  background-color: var(--github-background-color);
-  color: var(--color-main-github);
-  width: 100px;
-}
-
-.presentation__title {
-  border: 2px solid var(--font-color-title);
-  font-family: var(--text-title-banner);
-  color: var(--font-color-title);
-  text-align: center;
-  line-height: 40px;
-  font-weight: 300;
-  font-size: 15px;
-  margin: 0 auto;
-  margin-top: 40px;
-  padding: 2px;
-  width: 70vw;
-}
-
-.presentation__text_cont {
-  font-family: var(--text-presentation);
-  font-size: 18px;
-}
-
-.presentation__a {
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-@media(min-width: 500px) {
-  .presentation__container {
-    background-size: cover;
-  }
 }
 
 @media(min-width: 768px) {
   .presentation__container {
-    background-image: url('https://res.cloudinary.com/dgouwu7h7/image/upload/v1693883899/portfolio/7592b33effecc662ba27ac6b7a7f8887.png');
-    grid-template-areas: "item2 item1";
-    margin-top: 10px;
-    height: 500px;
-    padding: 20px;
+    height: 520px;
   }
 
-  .presentation__text_cont {
-    grid-area: item2;
-    font-size: 24px;
-    width: 90%;
-  }
-
-  .presentation__title {
-    border: 3px solid var(--font-color-title);
-    text-orientation: upright;
-    writing-mode: vertical-rl;
-    justify-content: center;
-    white-space: nowrap;
-    align-items: center;
-    margin-right: -80px;
-    margin-top: 21px;
-    font-size: 15px;
-    display: flex;
-    width: 60px;
-  }
-
-  .presentation__links {
-    right: 100px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .presentation__container {
-    height: 600px;
-  }
-
-  .presentation__text_cont {
-    font-size: 30px;
-  }
-
-  .presentation__title {
-    margin-right: -100px;
-    margin-top: 40px;
-    font-size: 18px;
+  .presentation__layer {
+    font-size: 35px;
   }
 }
